@@ -216,10 +216,50 @@ Echo 'Произведение значений массива = '. array_produc
 
 function task12 () {
     echo '12. Нарисовать треугольник и числ при помощи php.'."<br>";
+
+    $str = 10;
+    $center = $str/2;
       
-    for ($i=0; $i < 7; $i++) {
-        for ($j=7; $j>$i; $j--){
-            echo '0';
+    for ($i=0; $i < $str; $i++) {
+        for ($j=0; $j<$str; $j++){
+            if ($i <= $center){
+                if ( $j >= $center - $i && $j <= $center + $i){
+                    echo "0";
+                } else {
+                    echo "_";
+                }
+            } 
+        }
+        echo "<br>";
+}
+}
+
+
+
+// 13. Нарисовать ромб и числ при помощи php.
+
+function task13 () {
+    echo '12. Нарисовать треугольник и числ при помощи php.'."<br>";
+
+    $str = 10;
+    $center = $str/2;
+      
+    for ($i=0; $i < $str; $i++) {
+        for ($j=0; $j<$str; $j++){
+            if ($i <= $center){
+                if ( $j >= $center - $i && $j <= $center + $i){
+                    echo "0";
+                } else {
+                    echo "_";
+                }
+            } else {
+
+                if ( $j >= $center + $i - $str + 1 && $j <= $center - $i + $str - 1){
+                    echo "0";
+                } else {
+                    echo "_";
+                }
+            }
         }
         echo "<br>";
 }
@@ -261,6 +301,8 @@ function task12 () {
         <?php task11()?>
         <br>
         <?php task12()?>
+        <br>
+        <?php task13()?>
         <br>
     </body>
 </html>
