@@ -20,7 +20,6 @@ class Worker {
         return $this->name;
     }
 
-
     public function SetAge($age) {
         //echo 1;
         if ($this->checkAge($age)){
@@ -85,7 +84,3 @@ $name2 = $object2->GetName();
 echo "summ of the age of "."$name1"." and "."$name2"." = "."$res1"."<br>";
 echo "summ of the salary: "."$res2"."<br>";
 
-
-
-
-?>
