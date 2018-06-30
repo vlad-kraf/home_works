@@ -266,6 +266,17 @@ function task13 () {
 
 }
 
+function task14 () {
+    if (mail("mariia.bocheva@gmail.com", "Первый имейл из php", "Люблю зайца",   
+"From: webmaster@example.com \r\n")) { 
+    echo "messege acepted for delivery"; 
+} else { 
+    echo "some error happen"; 
+} 
+}
+
+
+
 
 
 
@@ -303,6 +314,8 @@ function task13 () {
         <?php task12()?>
         <br>
         <?php task13()?>
+        <br>
+        <?php task14()?>
         <br>
     </body>
 </html>
