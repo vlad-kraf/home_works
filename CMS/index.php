@@ -116,3 +116,36 @@ Class Flash {
 
 //$obj5 -> setMassage($name, $message_content);
 //$obj5-> getMassage($name);
+
+
+
+class dbWorker {
+
+    public $link;
+    public $sql;
+
+    public function getData($link,$sql) {
+        return mysqli_query($link, $sql);
+    }
+
+    public function delData($link,$sql) {
+        return mysqli_query($link, $sql);
+    }
+
+    public function updateData($link,$sql) {
+        return mysqli_query($link, $sql);
+    }
+
+    public function countData($link,$sql) {
+        return mysqli_query($link, $sql);
+    }
+
+    public function clearData($link,$sql) {
+        return mysqli_query($link, $sql);
+    }
+
+    public function clearTables($link,$sql) {
+        return mysqli_query($link, $sql);
+    }
+
+}

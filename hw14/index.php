@@ -3,14 +3,14 @@ ini_set('display_errors',true);
 error_reporting(E_ALL);
 header("Content-Type: text/html; charset=utf-8");
 
-// Создаем новый класс:
+
 class Worker {
 
     private $name;
     private $age;
     private $salary;
 
-// методы:
+
 
     public function SetName($name) {
         $this->name = $name;
@@ -21,7 +21,6 @@ class Worker {
     }
 
     public function SetAge($age) {
-        //echo 1;
         if ($this->checkAge($age)){
             $this->age = $age;
         }
@@ -55,11 +54,8 @@ class Worker {
 }
 
 
-// Создаем объект класса:
 $object1 = new Worker;
-//$object1->name = "Иван";
-//$object1->age = 25;
-//$object1->salary = 1000;
+
 $object1->SetName("Иван");
 $object1->SetAge(25);
 $object1->SetSalary(1000);
@@ -67,9 +63,7 @@ $object1->SetSalary(1000);
 
 
 $object2 = new Worker;
-//$object2->name = "Вася";
-//$object2->age = 26;
-//$object2->salary = 2000;
+
 $object2->SetName("Вася");
 $object2->SetAge(26);
 $object2->SetSalary(2000);
